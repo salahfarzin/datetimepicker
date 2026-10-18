@@ -11,6 +11,16 @@ A React date and time picker for the **Gregorian**, **Jalali** (Solar Hijri) and
 - A modal picker, a time picker and a ready-made input field.
 - Plain CSS themed with custom properties. Works with or without Tailwind.
 
+## Screenshots
+
+| | Light | Dark |
+|---|---|---|
+| Date | <img src="docs/screenshots/date-light.png" alt="Date tab, light theme" width="280"> | <img src="docs/screenshots/date-dark.png" alt="Date tab, dark theme" width="280"> |
+| Time | <img src="docs/screenshots/time-light.png" alt="Time tab, light theme" width="280"> | <img src="docs/screenshots/time-dark.png" alt="Time tab, dark theme" width="280"> |
+| Jalali, right to left | <img src="docs/screenshots/jalali-light.png" alt="Jalali calendar in Persian, light theme" width="280"> | <img src="docs/screenshots/jalali-dark.png" alt="Jalali calendar in Persian, dark theme" width="280"> |
+
+The dark ones use the [dark theme example](#dark-theme) below.
+
 ## Install
 
 Installed from a git tag on GitHub (no npm registry):
@@ -143,7 +153,27 @@ Set these custom properties, e.g. from your own theme variables:
 ```
 
 The styles sit in `@layer components`, so Tailwind utilities and any unlayered CSS of
-your own override them. Classes are prefixed `dtp-`.
+your own override them. Classes are prefixed `dtp-`. With Tailwind, import the stylesheet
+after `@import "tailwindcss"`, so Tailwind's layer order (`base` before `components`) is set
+first and its preflight doesn't override the picker.
+
+### Dark theme
+
+The defaults are light. A dark theme, as in the screenshots, under whatever selector your
+app switches themes with:
+
+```css
+[data-theme="dark"] {
+  --dtp-bg: #1c1c1e;
+  --dtp-border: rgba(255, 255, 255, 0.1);
+  --dtp-text: #f5f5f7;
+  --dtp-text-muted: #8e8e93;
+  --dtp-surface: #2c2c2e;
+  --dtp-surface-hover: #3a3a3c;
+  --dtp-accent: #0a84ff;
+  --dtp-accent-soft: rgba(10, 132, 255, 0.15);
+}
+```
 
 ## Development
 
