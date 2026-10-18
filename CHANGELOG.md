@@ -3,6 +3,11 @@
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow
 [SemVer](https://semver.org/).
 
+## v1.0.2 — 2026-10-18
+
+First release on the npm registry: `npm install @salahfarzin/datetimepicker`. No code changes;
+the README shows the npm install and its screenshots load on npmjs.com too.
+
 ## v1.0.1 — 2026-10-18
 
 ### Fixes

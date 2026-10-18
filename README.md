@@ -15,24 +15,23 @@ A React date and time picker for the **Gregorian**, **Jalali** (Solar Hijri) and
 
 | | Light | Dark |
 |---|---|---|
-| Kurdish, Sorani (solar months, right to left) | <img src="docs/screenshots/ckb-light.png" alt="Sorani Kurdish calendar, light theme" width="280"> | <img src="docs/screenshots/ckb-dark.png" alt="Sorani Kurdish calendar, dark theme" width="280"> |
-| Kurdish, Kurmanji | <img src="docs/screenshots/kmr-light.png" alt="Kurmanji Kurdish calendar, light theme" width="280"> | <img src="docs/screenshots/kmr-dark.png" alt="Kurmanji Kurdish calendar, dark theme" width="280"> |
-| Gregorian | <img src="docs/screenshots/date-light.png" alt="Date tab, light theme" width="280"> | <img src="docs/screenshots/date-dark.png" alt="Date tab, dark theme" width="280"> |
-| Time | <img src="docs/screenshots/time-light.png" alt="Time tab, light theme" width="280"> | <img src="docs/screenshots/time-dark.png" alt="Time tab, dark theme" width="280"> |
-| Jalali, right to left | <img src="docs/screenshots/jalali-light.png" alt="Jalali calendar in Persian, light theme" width="280"> | <img src="docs/screenshots/jalali-dark.png" alt="Jalali calendar in Persian, dark theme" width="280"> |
+| Kurdish, Sorani (solar months, right to left) | <img src="https://raw.githubusercontent.com/salahfarzin/datetimepicker/main/docs/screenshots/ckb-light.png" alt="Sorani Kurdish calendar, light theme" width="280"> | <img src="https://raw.githubusercontent.com/salahfarzin/datetimepicker/main/docs/screenshots/ckb-dark.png" alt="Sorani Kurdish calendar, dark theme" width="280"> |
+| Kurdish, Kurmanji | <img src="https://raw.githubusercontent.com/salahfarzin/datetimepicker/main/docs/screenshots/kmr-light.png" alt="Kurmanji Kurdish calendar, light theme" width="280"> | <img src="https://raw.githubusercontent.com/salahfarzin/datetimepicker/main/docs/screenshots/kmr-dark.png" alt="Kurmanji Kurdish calendar, dark theme" width="280"> |
+| Gregorian | <img src="https://raw.githubusercontent.com/salahfarzin/datetimepicker/main/docs/screenshots/date-light.png" alt="Date tab, light theme" width="280"> | <img src="https://raw.githubusercontent.com/salahfarzin/datetimepicker/main/docs/screenshots/date-dark.png" alt="Date tab, dark theme" width="280"> |
+| Time | <img src="https://raw.githubusercontent.com/salahfarzin/datetimepicker/main/docs/screenshots/time-light.png" alt="Time tab, light theme" width="280"> | <img src="https://raw.githubusercontent.com/salahfarzin/datetimepicker/main/docs/screenshots/time-dark.png" alt="Time tab, dark theme" width="280"> |
+| Jalali, right to left | <img src="https://raw.githubusercontent.com/salahfarzin/datetimepicker/main/docs/screenshots/jalali-light.png" alt="Jalali calendar in Persian, light theme" width="280"> | <img src="https://raw.githubusercontent.com/salahfarzin/datetimepicker/main/docs/screenshots/jalali-dark.png" alt="Jalali calendar in Persian, dark theme" width="280"> |
 
 The dark ones use the [dark theme example](#dark-theme) below.
 
 ## Install
 
-Installed from a git tag on GitHub (no npm registry):
-
 ```sh
-npm install github:salahfarzin/datetimepicker#v1.0.1
+npm install @salahfarzin/datetimepicker
+# or: yarn add / pnpm add / bun add @salahfarzin/datetimepicker
 ```
 
-Each tag carries the built `dist/`, so installing needs neither git nor a build step,
-which also makes it work in slim CI and Docker images.
+Each git tag also carries the built `dist/`, so a tag installs straight from GitHub too,
+with neither git nor a build step: `npm install github:salahfarzin/datetimepicker#v1.0.2`.
 
 Requires React 18 or later. Import the styles once, e.g. in your root layout:
 
@@ -186,9 +185,8 @@ npm run check   # type check, tests, build
 
 ### Releasing
 
-`dist/` is committed, because apps install from tags. For a release:
-
 1. Note the changes in [CHANGELOG.md](CHANGELOG.md) and bump `version` in `package.json`.
-2. `npm run check`, then commit, including `dist/`.
+2. `npm run check`, then commit, including `dist/` (so the git tag installs too).
 3. `git tag vX.Y.Z && git push origin main vX.Y.Z`.
-4. In the apps: `npm install github:salahfarzin/datetimepicker#vX.Y.Z`.
+4. `npm publish` (runs `npm run check` first).
+5. In the apps: `npm install @salahfarzin/datetimepicker@^X.Y.Z`.

@@ -1,6 +1,6 @@
 {
   "name": "@salahfarzin/datetimepicker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React date and time picker for the Gregorian, Jalali (Solar Hijri) and Kurdish calendars, with ISO or calendar-string values.",
   "keywords": [
     "react",
@@ -44,7 +44,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "smoke": "node scripts/smoke.mjs",
-    "check": "npm run typecheck && npm test && npm run build && npm run smoke"
+    "check": "npm run typecheck && npm test && npm run build && npm run smoke",
+    "prepublishOnly": "npm run check"
   },
   "dependencies": {
     "react-date-object": "^2.1.9",
@@ -66,5 +67,12 @@
     "tsup": "^8.5.0",
     "typescript": "^5.9.3",
     "vitest": "^4.0.6"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/salahfarzin/datetimepicker#readme",
+  "bugs": {
+    "url": "https://github.com/salahfarzin/datetimepicker/issues"
   }
 }
