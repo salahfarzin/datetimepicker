@@ -1,38 +1,37 @@
 # Changelog
 
-The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow
-[SemVer](https://semver.org/).
+Released features and fixed bugs. One file per release under [docs/changelog/](docs/changelog/),
+named after its git tag; work not yet tagged is in [unreleased.md](docs/changelog/unreleased.md).
 
-## v1.0.3 — 2026-10-18
+| Version | Date | Type | Highlights |
+|---|---|---|---|
+| [Unreleased](docs/changelog/unreleased.md) | — | — | On `main`, not yet tagged |
+| [v1.0.3](docs/changelog/v1.0.3.md) | 2026-10-18 | patch | MIT licence, npm metadata, README badges |
+| [v1.0.2](docs/changelog/v1.0.2.md) | 2026-10-18 | patch | First release on npm |
+| [v1.0.1](docs/changelog/v1.0.1.md) | 2026-10-18 | patch | Last calendar column no longer clipped |
+| [v1.0.0](docs/changelog/v1.0.0.md) | 2026-10-18 | initial | Gregorian, Jalali and Kurdish date and time picker |
 
-MIT licence, author and more keywords for npm, and badges in the README. No code changes.
+## Adding entries
 
-## v1.0.2 — 2026-10-18
+- Add changes to [unreleased.md](docs/changelog/unreleased.md) as they land on `main`.
+- One line per user-visible change, not per commit. Say what changed for an app using the
+  package, not which file moved.
+- Groups, in order: **Features**, **Fixes**, **Performance**, **Security**, **Infrastructure**.
+  Omit empty groups.
+- Pick the version from what is in `unreleased.md`, per [SemVer](https://semver.org/):
+  any **Features** entry means a minor bump (`v1.0.3` → `v1.1.0`); a release with only
+  **Fixes**, **Performance**, **Security** or **Infrastructure** entries is a patch
+  (`v1.0.3` → `v1.0.4`); a breaking change to a prop, an export or the CSS custom properties
+  is a major.
 
-First release on the npm registry: `npm install @salahfarzin/datetimepicker`. No code changes;
-the README shows the npm install and its screenshots load on npmjs.com too.
+## Cutting a release
 
-## v1.0.1 — 2026-10-18
+1. Rename `unreleased.md` to `vX.Y.Z.md`, matching the git tag exactly.
+2. Set its heading to `# vX.Y.Z — YYYY-MM-DD` and fill in the type, previous-release link
+   and diff range, as in the existing files. Add a `Next:` link to the previous release's file.
+3. Create a fresh `unreleased.md`.
+4. Add a row to the top of the table above.
+5. Bump `version` in `package.json`, then release as in the README's
+   [Releasing](README.md#releasing) steps.
 
-### Fixes
-
-- A selected day in the calendar's last column is no longer clipped at the panel's edge: the
-  day grid was 16px wider than the calendar (its padding came on top of `width: 100%`).
-
-## v1.0.0 — 2026-10-18
-
-First release, extracted from the date pickers in rawej and the psychometrist dashboard so
-both share one.
-
-### Features
-
-- `DatePicker`: modal date and time picker for the Gregorian, Jalali and Kurdish calendars
-  (Sorani and Kurmanji).
-- `DatePickerInput`: a field that shows the value in the visitor's calendar and opens the picker.
-- `TimePicker`: hour and minute columns.
-- `valueFormat`: `"iso"` keeps values Gregorian `YYYY-MM-DD` whatever the calendar shown;
-  `"calendar"` reads and writes strings in the shown calendar and `format`.
-- String `minDate`/`maxDate` are read like `value`, so a Gregorian bound stays Gregorian in
-  the Jalali and Kurdish calendars.
-- Translatable labels, plain CSS themed with `--dtp-*` custom properties.
-- Calendar helpers: `parseValue`, `formatValue`, `displayValue`, `formatCalendarDate` and more.
+The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
