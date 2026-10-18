@@ -190,7 +190,8 @@ npm run check   # type check, tests, build
 
 ### Releasing
 
-1. Note the changes in [CHANGELOG.md](CHANGELOG.md) and bump `version` in `package.json`.
+1. Turn `docs/changelog/unreleased.md` into `vX.Y.Z.md` as described in
+   [CHANGELOG.md](CHANGELOG.md#cutting-a-release), and bump `version` in `package.json`.
 2. `npm run check`, then commit, including `dist/` (so the git tag installs too).
 3. `git tag vX.Y.Z && git push origin main vX.Y.Z`.
 4. `npm publish` (runs `npm run check` first).
