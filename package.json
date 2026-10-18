@@ -1,6 +1,6 @@
 {
   "name": "@salahfarzin/datetimepicker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React date and time picker for the Gregorian, Jalali (Solar Hijri) and Kurdish calendars, with ISO or calendar-string values.",
   "keywords": [
     "react",

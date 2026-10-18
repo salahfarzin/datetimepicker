@@ -3,6 +3,13 @@
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow
 [SemVer](https://semver.org/).
 
+## v1.0.1 — 2026-10-18
+
+### Fixes
+
+- A selected day in the calendar's last column is no longer clipped at the panel's edge: the
+  day grid was 16px wider than the calendar (its padding came on top of `width: 100%`).
+
 ## v1.0.0 — 2026-10-18
 
 First release, extracted from the date pickers in rawej and the psychometrist dashboard so

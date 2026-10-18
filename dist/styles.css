@@ -341,7 +341,7 @@
 
   .dtp-calendar .rmdp-wrapper { background: transparent !important; border: none !important; box-shadow: none !important; width: 100% !important; }
   .dtp-calendar .rmdp-calendar { width: 100% !important; padding: 0 !important; }
-  .dtp-calendar .rmdp-day-picker { padding: 8px !important; width: 100% !important; }
+  .dtp-calendar .rmdp-day-picker { box-sizing: border-box; padding: 8px !important; width: 100% !important; }
   .dtp-calendar .rmdp-day-picker > div { width: 100% !important; }
   .dtp-calendar .rmdp-day span { color: var(--dtp-text) !important; font-size: 0.8rem !important; font-weight: 700 !important; width: 34px !important; height: 34px !important; border-radius: 10px !important; transition: all 0.2s ease !important; }
   .dtp-calendar .rmdp-header-values { color: var(--dtp-text) !important; font-weight: 900 !important; font-size: 1.125rem !important; cursor: pointer; }
