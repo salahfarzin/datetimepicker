@@ -16,7 +16,7 @@ A React date and time picker for the **Gregorian**, **Jalali** (Solar Hijri) and
 | | Light | Dark |
 |---|---|---|
 | Kurdish, Sorani (solar months, right to left) | <img src="docs/screenshots/ckb-light.png" alt="Sorani Kurdish calendar, light theme" width="280"> | <img src="docs/screenshots/ckb-dark.png" alt="Sorani Kurdish calendar, dark theme" width="280"> |
-| Kurdish, Kurmanji (Gregorian months, year + 700) | <img src="docs/screenshots/kmr-light.png" alt="Kurmanji Kurdish calendar, light theme" width="280"> | <img src="docs/screenshots/kmr-dark.png" alt="Kurmanji Kurdish calendar, dark theme" width="280"> |
+| Kurdish, Kurmanji | <img src="docs/screenshots/kmr-light.png" alt="Kurmanji Kurdish calendar, light theme" width="280"> | <img src="docs/screenshots/kmr-dark.png" alt="Kurmanji Kurdish calendar, dark theme" width="280"> |
 | Gregorian | <img src="docs/screenshots/date-light.png" alt="Date tab, light theme" width="280"> | <img src="docs/screenshots/date-dark.png" alt="Date tab, dark theme" width="280"> |
 | Time | <img src="docs/screenshots/time-light.png" alt="Time tab, light theme" width="280"> | <img src="docs/screenshots/time-dark.png" alt="Time tab, dark theme" width="280"> |
 | Jalali, right to left | <img src="docs/screenshots/jalali-light.png" alt="Jalali calendar in Persian, light theme" width="280"> | <img src="docs/screenshots/jalali-dark.png" alt="Jalali calendar in Persian, dark theme" width="280"> |
