@@ -1,0 +1,6 @@
+node_modules/
+coverage/
+*.log
+.DS_Store
+# dist/ is committed: apps install this package straight from a git tag
+# (npm install github:salahfarzin/datetimepicker#vX.Y.Z), with no build step.

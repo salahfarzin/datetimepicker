@@ -1,0 +1,70 @@
+{
+  "name": "@salahfarzin/datetimepicker",
+  "version": "1.0.0",
+  "description": "React date and time picker for the Gregorian, Jalali (Solar Hijri) and Kurdish calendars, with ISO or calendar-string values.",
+  "keywords": [
+    "react",
+    "datepicker",
+    "timepicker",
+    "jalali",
+    "persian",
+    "shamsi",
+    "kurdish",
+    "calendar"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salahfarzin/datetimepicker.git"
+  },
+  "type": "module",
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./calendars": {
+      "types": "./dist/calendars.d.ts",
+      "import": "./dist/calendars.js",
+      "require": "./dist/calendars.cjs"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "smoke": "node scripts/smoke.mjs",
+    "check": "npm run typecheck && npm test && npm run build && npm run smoke"
+  },
+  "dependencies": {
+    "react-date-object": "^2.1.9",
+    "react-multi-date-picker": "^4.5.2"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "jsdom": "^27.1.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.6"
+  }
+}
