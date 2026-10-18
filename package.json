@@ -1,6 +1,6 @@
 {
   "name": "@salahfarzin/datetimepicker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React date and time picker for the Gregorian, Jalali (Solar Hijri) and Kurdish calendars, with ISO or calendar-string values.",
   "keywords": [
     "react",
@@ -10,8 +10,20 @@
     "persian",
     "shamsi",
     "kurdish",
-    "calendar"
+    "calendar",
+    "date-picker",
+    "time-picker",
+    "solar-hijri",
+    "sorani",
+    "kurmanji",
+    "rtl",
+    "nextjs"
   ],
+  "author": {
+    "name": "Salah Farzin",
+    "url": "https://github.com/salahfarzin"
+  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/salahfarzin/datetimepicker.git"

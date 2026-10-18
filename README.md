@@ -1,5 +1,10 @@
 # @salahfarzin/datetimepicker
 
+[![npm version](https://img.shields.io/npm/v/@salahfarzin/datetimepicker)](https://www.npmjs.com/package/@salahfarzin/datetimepicker)
+[![license: MIT](https://img.shields.io/npm/l/@salahfarzin/datetimepicker)](https://github.com/salahfarzin/datetimepicker/blob/main/LICENSE)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@salahfarzin/datetimepicker)](https://bundlephobia.com/package/@salahfarzin/datetimepicker)
+[![types: TypeScript](https://img.shields.io/npm/types/@salahfarzin/datetimepicker)](https://www.npmjs.com/package/@salahfarzin/datetimepicker)
+
 A React date and time picker for the **Gregorian**, **Jalali** (Solar Hijri) and
 **Kurdish** calendars, built on [react-multi-date-picker](https://shahabyazdi.github.io/react-multi-date-picker/).
 
@@ -31,7 +36,7 @@ npm install @salahfarzin/datetimepicker
 ```
 
 Each git tag also carries the built `dist/`, so a tag installs straight from GitHub too,
-with neither git nor a build step: `npm install github:salahfarzin/datetimepicker#v1.0.2`.
+with neither git nor a build step: `npm install github:salahfarzin/datetimepicker#v1.0.3`.
 
 Requires React 18 or later. Import the styles once, e.g. in your root layout:
 
@@ -190,3 +195,7 @@ npm run check   # type check, tests, build
 3. `git tag vX.Y.Z && git push origin main vX.Y.Z`.
 4. `npm publish` (runs `npm run check` first).
 5. In the apps: `npm install @salahfarzin/datetimepicker@^X.Y.Z`.
+
+## Licence
+
+[MIT](https://github.com/salahfarzin/datetimepicker/blob/main/LICENSE) © Salah Farzin

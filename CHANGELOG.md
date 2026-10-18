@@ -3,6 +3,10 @@
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow
 [SemVer](https://semver.org/).
 
+## v1.0.3 — 2026-10-18
+
+MIT licence, author and more keywords for npm, and badges in the README. No code changes.
+
 ## v1.0.2 — 2026-10-18
 
 First release on the npm registry: `npm install @salahfarzin/datetimepicker`. No code changes;
